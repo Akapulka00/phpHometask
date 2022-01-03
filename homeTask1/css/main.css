@@ -1,0 +1,10 @@
+@import "flex-grid.css";
+body {
+  margin: 0 auto;
+  font-size: 16pt;
+  max-width: 2000px;
+}
+.menu{
+  padding: 1rem;
+}
+
