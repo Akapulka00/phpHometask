@@ -1,0 +1,46 @@
+@import "flex-grid.css";
+body {
+  margin: 0 auto;
+  font-size: 16pt;
+  max-width: 2000px;
+}
+.menu{
+  padding: 1rem;
+}
+.margin{
+  margin: 1rem 3rem;
+}
+.cardInfo{
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  padding: .3rem 1rem;
+  background-color: #ff4085;
+  color: aliceblue;
+}
+.massegeSoldOut{
+  color: #ff0f4a;
+}
+.imgItem{
+  width: 100%;
+  height: auto;
+}
+.blox *{
+  padding: .5rem;
+}
+.count{
+  color: #ff0f4a;
+  font-weight: bold;
+}
+header{
+  padding: 1rem;
+}
+.icon{
+  display: inline-block;
+  text-align: end;
+}
+.heat{
+  border-bottom: 1px solid black;
+}
