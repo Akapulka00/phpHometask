@@ -11,7 +11,7 @@ function getCake(int $id) {
     }
 }
 $cake = getCake($id);
-echo $cake;
+echo json_encode($cake);
 if (!isset($cake)) {
     header("Location: cakes.php");
 }
