@@ -7,11 +7,11 @@ for (let cart of carts ){
     event.preventDefault();
     let my_id=cart.dataset.id;
     console.log(my_id);
-    let url='cake.php?id='+my_id;
+    let url='task4/cake.php?id='+my_id;
     fetch(url)
       .then(response => response.text())
       .then(answer => {
-
+        console.log(answer);
       });
     let dialogWindow=document.createElement('div');
     dialogWindow.classList.add("modalDialog");

@@ -20,7 +20,7 @@ $cakes = require_once 'task4/cakes_data.php';
             <img src="task4/images/<?= $cake['main_img'] ?>">
         </div>
       <p>Стоимость: <?= $cake['price'] . $cake['currency'] ?></p>
-      <a href="cake.php?id=<?= $cake['id'] ?>">Подробнее</a>
+      <a href="task4/cake.php?id=<?= $cake['id'] ?>">Подробнее</a>
     </div>
     <? endforeach; ?>
 </main>
