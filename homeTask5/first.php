@@ -17,10 +17,9 @@
   <li> доступны любые форматы картинок кроме gif</li>
   <li>Размер картинки не должен привышать 1 Мбайт</li>
   <li>Можно загрузить не более 4 картинок!</li>
-  <li>Шапокляк</li>
 </ul>
 <form name="send-files" >
-  <input type="file" multiple aaccept="image/*" name="thfile">
+  <input type="file" multiple accept="image/*" name="thfile">
   <input type="submit" value="Загрузить">
 </form>
 <div class="waring">

@@ -3,7 +3,7 @@ $files = $_FILES;
 $tmp_name = $files['thfile']['tmp_name'];
 $file_name = $files['thfile']['name'];
 $file_name = microtime() . $file_name;
-$flag=1;
+//В начале проверка на 0 $files['thfile']['error'] === 0
 if($files['thfile']['type']=="image/gif"){
   echo 'Файл ' . $files['thfile']['name'] . ' не был  получен по причине: недопустимый тип данных!';
 }
