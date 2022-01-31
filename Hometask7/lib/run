@@ -1,0 +1,31 @@
+#!/usr/bin/env php
+<?php
+require_once  'ComandBuilder.php';
+require_once 'commands.php';
+$getM=getMetods();
+//echo $argv[0];
+//echo $argv[1]; // параметр1
+//echo $argv[2]; // параметр2
+if(!isset($argv[2])){
+  $argv[2]="";
+}
+
+if(array_key_exists($argv[1],$getM)) {
+  $handler=ComandBuilder::getCommand($argv[1]);//на этом этапе у нас имеется обект
+  if($argv[2]==""){
+    $handler->execute();
+  }elseif ($argv[2]=="help"){
+    $handler->help($argv[1]);
+  }else{
+    throw new InvalidArgumentException('Таких методов не описанно!');
+  }
+
+}else{
+  throw new InvalidArgumentException('Таких команд не существует!');
+}
+
+
+// и тд
+// $argv массив параметров, полученных из консоли
+
+
