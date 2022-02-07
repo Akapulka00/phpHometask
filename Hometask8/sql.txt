@@ -1,0 +1,12 @@
+use  users;
+create  database  users;
+create table if not exists tb_users
+(
+    id    int auto_increment primary key,
+    email  varchar(70) not null,
+    login  varchar(255) not null, -- имя фамилия
+    password varchar(70) not null ,
+    phone varchar(30)  not null
+);
+ALTER TABLE tb_users
+    ADD UNIQUE (email,login, phone);
