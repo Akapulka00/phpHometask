@@ -20,5 +20,6 @@ function registration(){
     $statement = $connection->prepare($sql);
      $statement->execute($params);
      echo "Вы успешно зарегистрировались!";
+     header('Location:home.php');
   }
 }
