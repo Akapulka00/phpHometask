@@ -18,6 +18,9 @@
     <input type="text" id="pas" name="password">
     <input type="submit" value="Подобрать">
 </form>
+<div class="waring">
+
+</div>
 <script src="js/main.js"></script>
 </body>
 </html>
