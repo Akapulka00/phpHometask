@@ -1,0 +1,1 @@
+document.forms.addcake.addEventListener("submit",(function(e){e.preventDefault(),fetch("/addcake",{method:"post",body:new FormData(this)}).then((e=>e.text())).then((e=>{console.log(e)}))}));

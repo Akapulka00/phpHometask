@@ -1,0 +1,8 @@
+.massage{
+  display: flex;
+
+}
+.massage img{
+  width: 300px;
+  height: auto;
+}

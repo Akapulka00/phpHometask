@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("Аякс запрос на добавление альпиниста в группу"),document.forms.signup.addEventListener("submit",(function(e){e.preventDefault(),fetch("/signup",{method:"post",body:new FormData(this)}).then((e=>e.text())).then((e=>{"success"===e?console.log("Вы добавлены в группу"):console.log("Вы не были добавлены в группу")}))}))})();
